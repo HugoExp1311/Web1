@@ -1,0 +1,392 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: #fff;
+   
+}
+
+/* Header styling */
+header {
+    background-color: #171f27;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;  
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1497ff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cta-button:hover {
+    
+    background-color: #1065ba;
+}
+
+/* Featured games section styling */
+.featured-games {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.featured-games h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.game-card {
+    position: relative;
+    background-color: #1b2838;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game-card img {
+    
+    width: 70%;
+    border-radius: 5px;
+}
+.game-card h2{
+    text-align:  rightS;
+}
+
+.game-card h3 {
+    font-size: 20px;
+    margin: 10px 
+}
+
+
+/*store stuff*/
+
+.container {
+   
+    margin: 0 auto;
+    padding:  0;
+    align-items: center;
+   
+    justify-content: center;
+}
+  
+  .slideshow {
+    
+    width: 600px;
+    height: 400px;
+   overflow: hidden;
+   border-radius: 10px;
+  }
+  
+.sliders{   
+    width: 100%;
+    height: 400px;
+   display: flex;
+}
+.sliders input{
+    display: none;
+}
+.slider{
+    width: 100%;
+    transition: 1s;  
+}
+.slider image{ 
+width: 600px;
+height: 400px;
+}
+.nav-manual{
+    position: absolute;
+    width: 600px;
+    margin-top: -20px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+   border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+ .manual-btn:not(:last-child){
+    margin-right: 30px;
+ }
+ .manual-btn:hover{
+    background-color: #40d3dc;
+ }
+ #radio1:checked ~ .first{
+    margin-left: 0;
+ }
+ #radio2:checked ~ .first{
+    margin-left: -100%;
+ }#radio3:checked ~ .first{
+    margin-left: -200%;
+ }
+ 
+ .nav-auto{
+    position: absolute;
+    width: 600px;
+    margin-top: -20px;
+    justify-content: center;
+    display: flex;
+  }
+  .nav-auto div{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+   border-radius: 10px;
+    transition: 1s;
+  }
+  .nav-auto div:not(:last-child){
+    margin-right: 30px;
+ }
+ #radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #40d3dc;
+ }
+ #radio2:checked ~ .nav-auto.auto-btn2{
+    background-color: #40d3dc;
+ }#radio3:checked ~ .nav-auto.auto-btn3{
+    background-color: #40d3dc;
+ }
+ /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .community {
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right:20%;
+  } 
+  .community_title {
+    font-size:25px;
+  }
+.community_subtitle {
+    font-size:20px;
+    color: #9099a1;
+    font-family: Arial, Sans-Serif;
+    padding-top: 5px;
+}
+.community_welcome {
+    margin-top: 15px;
+    width: 66%;
+    background: rgba(0, 0, 0, 0.4);
+    float: left;
+    color:lightgray;
+}
+.community_welcome1 {
+    padding: 10px;
+    min-height:210px;
+}
+.community_login {
+    float: left;
+    width: 50%;
+    font-size: 15px;
+}
+.community_login_content {
+    padding: 0 10px 0 0;
+}
+.community_signin_button {
+    padding-top: 15px;
+}
+.community_or {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.community_new {
+    padding-top: 10px;
+}
+.community_popular {
+    float: left;
+    width: 50%;
+}
+.community_popular_hubs {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.community_find_friends {
+    margin-top: 15px;
+    width: 33%;
+    background: rgba(0, 0, 0, 0.4);
+    float: right;
+    color:lightgray;
+}
+.community_find_friends1 {
+    padding:10px;
+    min-height:210px;
+}
+.community_find_friends2 {
+    float: right;
+    width: 100%;
+    font-size: 15px;
+}
+.community_findfriends_search {
+    font-style: italic;
+    width: 80%;
+}
+.community_hub_image {
+    float: left;
+    width: 30px; 
+    height: 30px; 
+    margin-right:5px;   
+}
+.community_hub_text {
+    font-size:15px;
+    padding-top:7.5px;
+} 
+.nav_community {
+    padding-top:10px;
+    margin:0;
+    font-size:15px;
+}
+.community_artwork_screenshots_guides {
+    padding-top: 10px;
+}
+.community_left {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+    float:left; 
+    width:48%;
+}
+.community_right {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+    float:right;
+    width:48%;     
+} 
+.community_image {
+    height:auto;
+    width:100%;
+}
+.community_overflow {
+    overflow:hidden; 
+    height:250px;  
+}
+.community_image_name {
+    font-size: 15px;
+    color:lightgray;
+}
+.community_center {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.community_screenshots {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.community_guides {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.community_guides_image {
+    width:60px;
+    height:60px;
+}
+.community_content_left {
+    margin:5px;
+    padding:5px;
+    float:left; 
+}
+.community_content_right {
+    margin:5px;
+    padding:5px;
+}
+.community_guides_content {
+    font-size:13px;
+    color: #8c8b8a;
+    height:80px;
+}
+.community_guides_name {
+    padding:5px;
+}
+.community_thirdcontent {
+    margin:5px;
+    padding:5px;
+    background: rgba(0, 0, 0, 0.4);
+    float:left; 
+    width:32.2%;
+}
+
+
